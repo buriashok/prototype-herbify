@@ -5,6 +5,8 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 
 class MainActivity : AppCompatActivity() {
@@ -33,6 +35,21 @@ class MainActivity : AppCompatActivity() {
 
         val adapter = ImageAdapter(images)
         viewPager.adapter = adapter
+        val plantRecyclerView: RecyclerView = findViewById(R.id.plantRecyclerView)
+        plantRecyclerView.layoutManager = GridLayoutManager(this, 2)
+
+        val plantList = listOf(
+            Plant("Neem", R.drawable.neem),
+            Plant("Tulsi", R.drawable.tulsi),
+            Plant("Aloe Vera", R.drawable.aloe_vera),
+            Plant("Ashwagandha", R.drawable.ashwagandha),
+            Plant("Brahmi", R.drawable.brahmi),
+            Plant("Turmeric", R.drawable.turmeric)
+        )
+
+        val plantAdapter = PlantAdapter(plantList)
+        plantRecyclerView.adapter = plantAdapter
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
