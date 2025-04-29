@@ -1,3 +1,39 @@
 <resources>
-    <string name="app_name">sample_one</string>
+    <string name="app">Herbify</string>
+
+    <string name="neem">
+        Neem is a fast-growing evergreen tree...&#10;
+        💊 Medicinal Uses: ...&#10;
+        🌱 Benefits: ...&#10;
+        ⭐ Rating: 4.8 / 5
+    </string>
+
+    <string name="tulsi_description">
+        Tulsi (Holy Basil) is a sacred plant in Ayurveda...&#10;
+        💊 Medicinal Uses: ...&#10;
+        🌱 Benefits: ...&#10;
+        ⭐ Rating: 4.7 / 5
+    </string>
+    <string name="aloe_vera_description">
+        Aloe Vera is a medicinal herb...&#10;
+        💊 Medicinal Uses: ...&#10;
+        🌱 Benefits: ...&#10;
+        ⭐ Rating: 4.6 / 5
+    </string>
+    <string name="ashwagandha_description">
+        Ashwagandha is a medicinal herb...&#10;
+        💊 Medicinal Uses: ...&#10;
+        🌱 Benefits: ...&#10;
+        ⭐ Rating: 4.5 / 5
+    </string>
+    <string name="brahmi_description">
+        Brahmi is a medicinal herb...&#10;
+        💊 Medicinal Uses: ...&#10;
+        🌱 Benefits: ...&#10;
+        ⭐ Rating: 4.4 / 5>
+    <string name="turmeric_description">
+
+
+
+    <!-- Add other plant descriptions -->
 </resources>

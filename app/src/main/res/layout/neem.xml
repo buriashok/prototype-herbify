@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/neem"
+        android:layout_gravity="center">
+
+    </ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Neem is a fast-growing, evergreen tree native to the Indian subcontinent. It belongs to the mahogany family and is widely known for its resilience and medicinal properties. The leaves are serrated and bitter in taste, and the tree produces small white flowers and olive-like fruits \n .
+  💊 Medicinal Uses of Neem:
+\nActs as a natural antibacterial and antifungal agent
+
+\nUsed to treat skin conditions like eczema, acne, and psoriasis
+
+\nSupports oral hygiene – neem twigs are traditionally used as toothbrushes
+
+\nNeem oil is used to treat head lice and dandruff
+
+\nHas anti-inflammatory properties helpful in joint pain and arthritis
+\n🌱 3) Benefits of Neem:
+\nBoosts Immunity: Helps purify the blood and strengthen immune response
+
+\nSkincare: Reduces acne, pigmentation, and scars
+
+\nPest Control: Neem oil is an effective, eco-friendly pesticide
+
+\nHair Health: Fights scalp infections and promotes hair growth
+
+\nDetoxification: Aids in flushing out toxins from the body
+⭐ \n                                                                                                                  Rating:
+4.8 / 5 ⭐
+Based on traditional use and modern research, neem is considered one of the most valuable medicinal plants.">
+
+    </TextView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

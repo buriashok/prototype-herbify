@@ -8,21 +8,20 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class PlantAdapter(private val plants: List<Plant>) : RecyclerView.Adapter<PlantAdapter.PlantViewHolder>() {
+class PlantAdapter(
+    private val plantList: List<Plant>,
+    private val onItemClick: (Plant) -> Unit
+) : RecyclerView.Adapter<PlantAdapter.PlantViewHolder>() {
 
-    inner class PlantViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val plantImage: ImageView = view.findViewById(R.id.plantImage)
-        val plantName: TextView = view.findViewById(R.id.plantName)
+    inner class PlantViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val plantImage: ImageView = itemView.findViewById(R.id.plantImage)
+        val plantName: TextView = itemView.findViewById(R.id.plantName)
 
-        init {
-            view.setOnClickListener {
-                val position = adapterPosition
-                if (position != RecyclerView.NO_POSITION) {
-                    val context = view.context
-                    val intent = Intent(context, HerbDetailsActivity::class.java)
-                    intent.putExtra("HERB_NAME", plants[position].name)
-                    context.startActivity(intent)
-                }
+        fun bind(plant: Plant) {
+            plantImage.setImageResource(plant.imageResId)
+            plantName.text = plant.name
+            itemView.setOnClickListener {
+                onItemClick(plant)
             }
         }
     }
@@ -33,10 +32,8 @@ class PlantAdapter(private val plants: List<Plant>) : RecyclerView.Adapter<Plant
     }
 
     override fun onBindViewHolder(holder: PlantViewHolder, position: Int) {
-        val plant = plants[position]
-        holder.plantImage.setImageResource(plant.imageResId)
-        holder.plantName.text = plant.name
+        holder.bind(plantList[position])
     }
 
-    override fun getItemCount() = plants.size
+    override fun getItemCount(): Int = plantList.size
 }

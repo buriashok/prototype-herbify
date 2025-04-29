@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tulsi"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Tulsi, also known as Holy Basil, is revered in India for its spiritual significance and its powerful medicinal properties.\n
+💊 Medicinal Uses of Tulsi:\n
+- Boosts respiratory health\n
+- Relieves cold and cough\n
+- Strengthens immunity\n
+- Reduces stress and anxiety\n
+🌱 Benefits of Tulsi:\n
+- Purifies the blood\n
+- Supports digestion\n
+- Anti-aging properties\n
+- Natural adaptogen (stress buster)\n
+⭐ Rating:\n
+4.8 / 5 ⭐" />
+</LinearLayout>

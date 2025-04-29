@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/brahmi"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Brahmi is a renowned herb in Ayurveda, famous for its brain-boosting and calming properties.\n
+💊 Medicinal Uses of Brahmi:\n
+- Enhances cognitive functions\n
+- Reduces anxiety and stress\n
+- Helps in Alzheimer's management\n
+- Boosts memory and learning\n
+🌱 Benefits of Brahmi:\n
+- Improves mental clarity\n
+- Boosts immunity\n
+- Acts as an antioxidant\n
+- Reduces inflammation\n
+⭐ Rating:\n
+4.7 / 5 ⭐" />
+</LinearLayout>

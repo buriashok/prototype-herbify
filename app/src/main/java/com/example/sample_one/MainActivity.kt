@@ -1,5 +1,7 @@
 package com.example.sample_one
 
+import Plant
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -47,8 +49,13 @@ class MainActivity : AppCompatActivity() {
             Plant("Turmeric", R.drawable.turmeric)
         )
 
-        val plantAdapter = PlantAdapter(plantList)
+        val plantAdapter = PlantAdapter(plantList) { selectedPlant ->
+            val intent = Intent(this, HerbDetailsActivity::class.java)
+            intent.putExtra("plant", selectedPlant)
+            startActivity(intent)
+        }
         plantRecyclerView.adapter = plantAdapter
+
 
     }
 

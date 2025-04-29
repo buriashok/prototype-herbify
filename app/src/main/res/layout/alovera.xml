@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/aloe_vera"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Aloe Vera is a succulent plant species known for its thick, fleshy leaves that store water. It is widely cultivated for its medicinal and cosmetic uses.\n
+💊 Medicinal Uses of Aloe Vera:\n
+- Soothes burns and skin irritations\n
+- Acts as a natural moisturizer\n
+- Supports digestive health\n
+- Boosts wound healing\n
+- Contains antioxidants and anti-inflammatory compounds\n
+🌱 Benefits of Aloe Vera:\n
+- Hydrates skin and hair\n
+- Promotes digestive health\n
+- Boosts immunity\n
+- Reduces inflammation\n
+⭐ Rating:\n
+4.7 / 5 ⭐" />
+</LinearLayout>

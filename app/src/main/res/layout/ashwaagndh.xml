@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ashwagandha"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Ashwagandha, also known as Indian ginseng, is a powerful herb used in Ayurvedic medicine for centuries for its rejuvenating properties.\n
+💊 Medicinal Uses of Ashwagandha:\n
+- Reduces stress and anxiety\n
+- Boosts brain function\n
+- Improves strength and stamina\n
+- Supports reproductive health\n
+🌱 Benefits of Ashwagandha:\n
+- Enhances memory and focus\n
+- Improves energy levels\n
+- Supports muscle growth\n
+- Balances hormones\n
+⭐ Rating:\n
+4.6 / 5 ⭐" />
+</LinearLayout>

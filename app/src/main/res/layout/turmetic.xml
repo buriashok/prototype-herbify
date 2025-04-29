@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/turmeric"
+        android:layout_gravity="center"
+        android:contentDescription="Turmeric image" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:paddingTop="16dp"
+        android:text="🌿 Turmeric (Curcuma longa) is a golden-yellow spice native to Southeast Asia and widely used in traditional medicine, especially Ayurveda. The active compound, curcumin, is known for its powerful anti-inflammatory and antioxidant properties.\n
+💊 Medicinal Uses of Turmeric:\n
+- Reduces inflammation and joint pain\n
+- Aids in digestion and liver detox\n
+- Used to treat skin conditions like eczema\n
+- Supports wound healing and boosts immunity\n
+- May reduce symptoms of arthritis and metabolic syndrome\n
+🌱 Benefits of Turmeric:\n
+- Enhances brain function and reduces risk of neurodegenerative diseases\n
+- Helps manage cholesterol levels\n
+- Acts as a natural antiseptic\n
+- Promotes radiant skin and fights acne\n
+⭐ Rating:\n
+4.9 / 5 ⭐\n
+Turmeric is widely praised for its healing properties and is a staple in herbal medicine and modern supplements." />
+
+</LinearLayout>
