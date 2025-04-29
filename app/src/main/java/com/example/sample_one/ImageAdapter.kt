@@ -6,7 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 
-class ImageAdapter(private val images: List<Int>) : RecyclerView.Adapter<ImageAdapter.ImageViewHolder>() {
+class ImageAdapter(private val fullList: List<Int>) : RecyclerView.Adapter<ImageAdapter.ImageViewHolder>() {
+    private var filteredList = fullList.toMutableList()
 
     class ImageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageView: ImageView = itemView.findViewById(R.id.imageView)
@@ -18,10 +19,19 @@ class ImageAdapter(private val images: List<Int>) : RecyclerView.Adapter<ImageAd
     }
 
     override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
-        holder.imageView.setImageResource(images[position])
+        holder.imageView.setImageResource(filteredList[position])
     }
 
-    override fun getItemCount(): Int {
-        return images.size
+    override fun getItemCount(): Int = filteredList.size
+
+    fun filter(query: String) {
+        filteredList = if (query.isEmpty()) {
+            fullList.toMutableList()
+        } else {
+            fullList.filterIndexed { index, _ ->
+                "Herb $index".contains(query, ignoreCase = true)
+            }.toMutableList()
+        }
+        notifyDataSetChanged()
     }
 }
